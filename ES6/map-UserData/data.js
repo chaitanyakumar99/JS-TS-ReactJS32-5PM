@@ -1002,17 +1002,15 @@ let displayUserData = ()=>{
     /* console.log("Test Case 123")
     alert('Test Case 123') */
     let rows=""
-    
-    for(user of users){
-    if(user.gender ==="Female"){
-        rows = rows+`<tr>
-        <td>${user.id}</td>
-        <td>${user.name}</td>
-        <td>${user.gender}</td>
-     </tr>`
-    }
-       
-    }
+    users.map((user)=>{
+        if(user.gender==="Female"){
+            rows =rows +`<tr>
+                            <td>${user.id}</td>
+                            <td>${user.name}</td>
+                            <td>${user.gender}</td>
+                        </tr>`
+        }
+    })
     document.getElementsByTagName('tbody')[0].innerHTML=rows
     //document.getElementsByTagName('tbody')[0].innerHTML="GE"
 }
