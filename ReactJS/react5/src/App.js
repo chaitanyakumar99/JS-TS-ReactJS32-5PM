@@ -1,18 +1,11 @@
-import React from 'react'
-import Header from './website/Header'
-import Slider from './website/Slider'
-import Footer from './website/Footer'
-import Movie from './Movies/Movie'
-class App extends React.Component{
+import CompA from "./PropsEx/CompA"
+let App = ()=>{
 
-
-    render(){
-
-        return <div>
-                    <h1>App Component</h1>
-                    <Movie/>
-               
-                </div>
-    }
+    return <div>
+            <h1>App - Component</h1>
+            <hr/>
+            <CompA/>
+            </div>
 }
+
 export default App
