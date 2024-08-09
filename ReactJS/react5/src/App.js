@@ -1,10 +1,11 @@
-import User from './components/User'
-let App = ()=>{
-
-    return <div>
-                <h2>App Component</h2>
-                <hr/>
-                <User/>
-            </div>
+import React, { Fragment } from 'react'
+import Message from './Message'
+const App = () => {
+  return <Fragment>
+            <h1>App Component</h1>
+            <hr/>
+            <Message/>
+        </Fragment>
 }
-export default App;
+
+export default App
