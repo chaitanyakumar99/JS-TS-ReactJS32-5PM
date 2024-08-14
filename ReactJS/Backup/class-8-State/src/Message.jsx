@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 class Message extends React.Component{
     //msg="Hello..."
-    state={ msg:"Hello" }
+    state={ msg:"Hello...." }
     gmHandler = ()=>{
         this.setState({msg:"Good Morning"})
     }
