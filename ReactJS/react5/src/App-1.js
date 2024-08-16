@@ -1,11 +1,11 @@
 import { Fragment } from "react"
-import Employee from "./ListRending/Employee"
+import CompA from './PropsDrilling/CompA'
 let App = ()=>{
 
     return <Fragment>
             <h1>App Component</h1>
             <hr/>  
-            <Employee/>
+            <CompA/>
           </Fragment>
 }
 export default App

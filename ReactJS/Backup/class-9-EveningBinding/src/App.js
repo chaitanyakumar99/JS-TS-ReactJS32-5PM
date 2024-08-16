@@ -1,11 +1,11 @@
 import { Fragment } from "react"
-import Employee from "./ListRending/Employee"
+import Message from "./Message/Message"
 let App = ()=>{
 
     return <Fragment>
             <h1>App Component</h1>
             <hr/>  
-            <Employee/>
+            <Message/>
           </Fragment>
 }
 export default App
