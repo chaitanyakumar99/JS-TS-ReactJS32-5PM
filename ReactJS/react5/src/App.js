@@ -1,13 +1,13 @@
-import React from 'react'
-import Products from './EveningBinding/Products'
-import Message from './Message/Message'
+import React, { useState } from 'react'
 import Users from './Users/Users'
+import Navbar from './Navbar/Navbar'
 const App = () => {
+  
   return <div>
-            <h2>App Component</h2>
-            <hr />
-         {   /* <Products/> */ }
-         <Users/>
+                <Navbar/>
+                <h2>App Component</h2>
+                <hr/>
+                <Users/>
         </div>
 }
 
