@@ -11,17 +11,22 @@ class Users extends Component {
     })
     .catch()
    };
-   componentWillUnmount(){
-    console.log("Unmounting")
-   }
+ /*   getUsers = ()=>{
+    Axios.get('https://jsonplaceholder.typicode.com/users')
+        .then((resp)=>{
+          this.setState({users:resp.data})
+        })
+        .catch()
+   } */
   render() {
-    return <div className='container mt-4'>
-            <div className='row'>
-              <div className="col-md-6">
-              {
+    return <div>
+                <h3>Users Component</h3>
+                <pre>{JSON.stringify(this.state.users)}</pre>
+                {/* <button onClick={this.getUsers}>GetUsers</button> */}
+                {
                   this.state.users.length > 0 ? <>
-                  <table className='table table-hover table-striped'>
-                    <thead className='bg-dark text-white'>
+                  <table border={2}>
+                    <thead>
                       <tr>
                         <th>Id</th>
                         <th>Name</th>
@@ -40,13 +45,8 @@ class Users extends Component {
                     }
                     </tbody>
                   </table>
-                  </> : <h3></h3>
+                  </> : <h3>No Data</h3>
                 }
-              </div>
-            </div>
-                
-               
-               
             </div>
   }
 }
